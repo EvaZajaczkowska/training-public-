@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+       <meta charset="UTF-8">
+
+    <title>DOM - Document Object Model</title>
+</head>
+<body>
+
+    <div id="test">
+        <button onclick="createInputElements()">create more</button>
+        <form name="myForm">
+
+
+
+        </form>
+
+
+        <p>Some text here.</p>
+        <ul>
+            <li>list element1</li>
+            <li>list element2</li>
+        </ul>
+    </div>
+<!-- Content in here -->
+
+
+
+
+
+<!-- java script at the end -->
+
+    <script>
+    "use strict"
+
+function createInputElements(){
+    let myForm = document.forms["myForm"]
+    let div = document.createElement("div");
+    let input = document.createElement("input");
+    input.type = "text";
+    input.name = "chicken";
+    div.appendChild(input);
+    myForm.appendChild(div);
+
+
+    
+
+}
+
+console.log("hello World");
+    </script>
+    
+
+
+
+</body>
+</html>

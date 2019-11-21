@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+       <meta charset="UTF-8">
+
+    <title>DOM - Document Object Model</title>
+</head>
+<body>
+
+    <input type="number" id="getFirstNumber"><br>
+
+    <select id="getSelector">
+
+     <option value="plus">+</option>
+     <option value="minus">-</option>
+     <option value="multiple">*</option>
+     <option value="division">/</option>
+    </select><br>
+
+    <input type="number" id="getSecondNumber"><br>
+   
+            <button onclick="calculator()">ShowResults</button>
+            <button onclick="reset()">Reset</button>
+            <div id="result"></div>
+    
+
+
+       
+
+        <p>Some text here.</p>
+        <ul>
+            <li>list element1</li>
+            <li>list element2</li>
+        </ul>
+    </div>
+<!-- Content in here -->
+
+
+
+
+
+<!-- java script at the end -->
+
+    <script>
+    "use strict"
+
+    function calculator() {
+let getFirstNumber = document.getElementById("getFirstNumber").value;
+let getSecondNumber = document.getElementById("getSecondNumber").value;
+let select = document.getElementById("getSelector").value;
+let theResult; // box like storage where data are inside
+let divResult = document.getElementById("result");
+
+if(select === "plus") {
+    theResult = Number(getFirstNumber) + Number(getSecondNumber);
+    divResult.innerHTML = theResult;
+    } else if (select === "minus") {
+    theResult = Number(getFirstNumber) - Number(getSecondNumber);
+    divResult.innerHTML = theResult; 
+    } else if (select === "multiple") {
+    theResult = Number(getFirstNumber) * Number(getSecondNumber);
+    divResult.innerHTML = theResult; 
+    } else if (select === "division") {
+    theResult = Number(getFirstNumber) / Number(getSecondNumber);
+    divResult.innerHTML = theResult; 
+    }
+
+}
+    function reset() {
+document.getElementById("getFirstNumber").value="";
+document.getElementById("getSecondNumber").value="";
+document.getElementById("getSelector").value="";
+document.getElementById("result").innerHTML="";
+
+
+ }
+
+console.log("hello World");
+    </script>
+    
+
+
+
+</body>
+</html>

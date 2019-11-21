@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+       <meta charset="UTF-8">
+
+    <title>DOM - Document Object Model</title>
+</head>
+<body>
+
+<h1>The Lottery Game</h1>
+<p>guess 6 numbers between 1 and 45</p>
+
+<span>1:</span><input type="number1"><br>
+<span>2:</span><input type="number2"><br>
+<span>3:</span><input type="number3"><br>
+<span>4:</span><input type="number4"><br>
+<span>5:</span><input type="number5"><br>
+<span>6:</span><input type="number5"><br>
+<button onclick="generator()">generate numbers check if you are right....</button>
+<div id="result"></div>
+
+
+
+
+
+
+
+       
+
+        <p>Some text here.</p>
+        <ul>
+            <li>list element1</li>
+            <li>list element2</li>
+        </ul>
+    </div>
+<!-- Content in here -->
+
+
+
+
+
+<!-- java script at the end -->
+
+    <script>
+    "use strict"
+function numberSort(a, b) {
+    return a - b;
+}
+
+    function generator() {
+let storeTheNumbers = [];
+       let number1 = Math.floor(Math.random() * 46);
+       storeTheNumbers.push(number1);
+        let number2 = Math.floor(Math.random() * 46);
+        storeTheNumbers.push(number2);
+        let number3 = Math.floor(Math.random() * 46);
+        storeTheNumbers.push(number3);
+        let number4 = Math.floor(Math.random() * 46);
+        storeTheNumbers.push(number4);
+        let number5 = Math.floor(Math.random() * 46);
+        storeTheNumbers.push(number5);
+        let number6 = Math.floor(Math.random() * 46); 
+        storeTheNumbers.push(number6);
+
+        if() {
+            
+        }
+
+storeTheNumbers.sort(numberSort);
+
+
+
+
+
+        console.log(storeTheNumbers);
+}
+
+
+
+    
+
+
+
+
+    
+    </script>
+    
+
+
+</body>
+</html>
